@@ -14,3 +14,4 @@
 - activeSceneと同様のシーンをLoadSceneした時に正常に動作しない
   - SceneManager.loadedSceenなどのイベントは実行されているため、切り替わり途中にUpdateイベントが呼ばれないらしい
 - Android, iOSなどの実機で動作しない
+  - そもそも、`RuntimeInitializeOnLoadMethod`で実行中の`SceneManager.GetActiveScene()`の挙動が怪しい
